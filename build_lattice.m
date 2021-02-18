@@ -7,7 +7,7 @@ function L = build_lattice(z1, z2, horizontal_resolution)
     i2 = imag(z2);
     adjustment = (r2-r1)/(i2-i1);
     X = linspace(r1, r2, horizontal_resolution);
-    Y = linspace(i1, i2, uint8(horizontal_resolution/adjustment));
+    Y = linspace(i1, i2, round(horizontal_resolution/adjustment));
     [XX,YY] = meshgrid(X,Y);
     L = XX+1i*YY;
 end
