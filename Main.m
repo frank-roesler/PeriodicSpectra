@@ -3,7 +3,7 @@ clear;
 N   = 20;    % Size of matrix K
 C   = 0.01;  % threshold for determinant
 n_t = 100;   % number of theta points
-z0  = -4;    % Spectral shift
+z0  = -3;    % Spectral shift
 M   = 400;   % Precision in complex plane
 
 t  = linspace(0,pi,n_t); % theta array
