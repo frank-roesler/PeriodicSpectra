@@ -6,7 +6,7 @@ n_t = 100;   % number of theta points
 z0  = -4;    % Spectral shift
 M   = 400;   % Precision in complex plane
 
-t  = linspace(0,2*pi,n_t); % theta array
+t  = linspace(0,pi,n_t); % theta array
 Id = speye(2*N+1);
 
 % Define lattice in C:
